@@ -1,0 +1,15 @@
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        <div class="mr-2">
+            <img height="35" width="35" class="rounded-circle" 
+                src="/___uploads/profile_photos/<%= autenticatedUser.profilePhoto %>" alt="<%= autenticatedUser.name %>">
+        </div>
+        <%= autenticatedUser.name %>
+    </a>
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="/auth/setting">Settings</a>
+        <a class="dropdown-item" href="/auth/logout">Logout</a>
+        
+    </div>
+</li>
